@@ -3,7 +3,7 @@ using UnityEngine;
 public class PropBehavior : MonoBehaviour
 {
     public bool isFake = false;
-    public float moveSpeed = 1f;
+    public float moveAmount = 0.5f;
     private Transform defenseLine;
 
     void Start()
@@ -11,14 +11,21 @@ public class PropBehavior : MonoBehaviour
         defenseLine = GameObject.FindGameObjectWithTag("DefenseLine")?.transform;
     }
 
-    void Update()
+    public void Reactivate()
     {
-        if (isFake || !LightController.lightsOff) return;
+        int direction = Random.Range(0, isFake ? 2 : 3);
 
-        if (defenseLine != null)
+        Vector3 moveDir = Vector3.zero;
+
+        switch (direction)
         {
-            Vector3 direction = (defenseLine.position - transform.position).normalized;
-            transform.position += direction * moveSpeed * Time.deltaTime;
+            case 0: moveDir = Vector3.left; break;
+            case 1: moveDir = Vector3.right; break;
+            case 2:
+                if (!isFake) moveDir = Vector3.down;
+                break;
         }
+
+        transform.position += moveDir * moveAmount;
     }
 }

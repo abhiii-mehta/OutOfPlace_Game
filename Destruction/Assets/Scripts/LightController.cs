@@ -1,9 +1,20 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using System.Collections;
-
 public class LightController : MonoBehaviour
 {
     public static bool lightsOff = false;
+
+    [Header("Light Settings")]
+    public Light2D globalLight;
+    public float lightOnIntensity = 1f;
+    public float lightOffIntensity = 0.01f;
+
+    [Header("Flicker Timings")]
+    public float minOnTime = 1f;
+    public float maxOnTime = 2f;
+    public float minOffTime = 1f;
+    public float maxOffTime = 2f;
 
     void Start()
     {
@@ -15,10 +26,19 @@ public class LightController : MonoBehaviour
         while (true)
         {
             lightsOff = false;
-            yield return new WaitForSeconds(Random.Range(1f, 2f));
+            if (globalLight != null) globalLight.intensity = lightOnIntensity;
+
+            yield return new WaitForSeconds(Random.Range(minOnTime, maxOnTime));
 
             lightsOff = true;
-            yield return new WaitForSeconds(Random.Range(1f, 2f));
+            if (globalLight != null) globalLight.intensity = lightOffIntensity;
+
+            foreach (var prop in GameObject.FindObjectsByType<PropBehavior>(FindObjectsSortMode.None))
+            {
+                prop.Reactivate();
+            }
+
+            yield return new WaitForSeconds(Random.Range(minOffTime, maxOffTime));
         }
     }
 }
