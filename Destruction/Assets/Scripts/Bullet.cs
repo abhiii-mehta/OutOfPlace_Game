@@ -11,10 +11,17 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Prop"))
         {
+            PropBehavior prop = other.GetComponent<PropBehavior>();
+            if (prop != null && !prop.isFake)
+            {
+                GameManager.instance?.OnRealPropDestroyed();
+            }
+
             Debug.Log(" Hit prop: " + other.name);
-            Destroy(other.gameObject);      
-            Destroy(gameObject);           
+            Destroy(other.gameObject);
+            Destroy(gameObject);
             FindAnyObjectByType<PlayerShooting>()?.ClearBullet();
         }
     }
+
 }

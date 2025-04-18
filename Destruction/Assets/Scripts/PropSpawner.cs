@@ -38,6 +38,11 @@ public class PropSpawner : MonoBehaviour
             {
                 behavior.isFake = isFake;
             }
+            if (!isFake)
+            {
+                GameManager.instance?.RegisterRealProp();
+            }
+
         }
     }
 }
