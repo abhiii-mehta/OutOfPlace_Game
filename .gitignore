@@ -27,11 +27,11 @@ UserSettings/
 *.VSCode/
 *.DS_Store
 
-# Package dependencies
-Packages/
-Packages/com.unity.*
-Packages/manifest.json
-Packages/packages-lock.json
+# Keep Packages folder and custom content
+!Packages/
+!Packages/manifest.json
+!Packages/packages-lock.json
+
 
 # Auto-generated JetBrains Rider project files
 .idea/
