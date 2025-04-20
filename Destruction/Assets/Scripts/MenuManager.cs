@@ -8,6 +8,10 @@ public class MenuManager : MonoBehaviour
     public GameObject creditsPanel;
     public GameObject levelSelectPanel;
     public GameObject loadingScreen;
+    [Header("Gameplay UI")]
+    public GameObject pausePanel;
+
+    private bool isPaused = false;
 
     private bool soundPanelVisible = false;
     private bool creditsPanelVisible = false;
@@ -40,6 +44,12 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+
     private IEnumerator LoadLevelAsync(string levelName)
     {
         if (loadingScreen != null)
@@ -53,6 +63,12 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void RestartCurrentLevel()
+    {
+        Time.timeScale = 1f;
+        string currentScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentScene);
+    }
 
 
     public void ExitGame()
@@ -76,7 +92,16 @@ public class MenuManager : MonoBehaviour
         {
             CloseCreditsPanel();
         }
+        
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!isPaused)
+                PauseGame();
+            else
+                ResumeGame();
+        }
     }
+
 
     public void OpenCreditsPanel()
     {
@@ -89,4 +114,19 @@ public class MenuManager : MonoBehaviour
         creditsPanelVisible = false;
         creditsPanel.SetActive(false);
     }
+    public void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+        pausePanel.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        pausePanel.SetActive(false);
+    }
+
+
 }
