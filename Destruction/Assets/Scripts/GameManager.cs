@@ -19,6 +19,12 @@ public class GameManager : MonoBehaviour
     {
         totalRealProps++;
     }
+    public void OnRealPropReachedPlayer()
+    {
+        if (gameOver) return;
+        Debug.Log(" A real prop touched the player — YOU LOSE!");
+        gameOver = true;
+    }
 
     public void OnRealPropDestroyed()
     {
@@ -32,13 +38,5 @@ public class GameManager : MonoBehaviour
             Debug.Log("All real props eliminated — YOU WIN!");
             gameOver = true;
         }
-    }
-
-    public void OnRealPropReachedDefense()
-    {
-        if (gameOver) return;
-
-        Debug.Log(" A real prop reached the defense line — YOU LOSE!");
-        gameOver = true;
     }
 }

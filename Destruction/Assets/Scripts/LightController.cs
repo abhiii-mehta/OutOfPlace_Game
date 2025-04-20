@@ -32,13 +32,8 @@ public class LightController : MonoBehaviour
 
             lightsOff = true;
             if (globalLight != null) globalLight.intensity = lightOffIntensity;
-
-            foreach (var prop in GameObject.FindObjectsByType<PropBehavior>(FindObjectsSortMode.None))
-            {
-                prop.Reactivate();
-            }
-
             yield return new WaitForSeconds(Random.Range(minOffTime, maxOffTime));
         }
     }
+
 }
