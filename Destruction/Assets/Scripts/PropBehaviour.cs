@@ -3,29 +3,30 @@ using UnityEngine;
 public class PropBehavior : MonoBehaviour
 {
     public bool isFake = false;
-    public float moveAmount = 0.5f;
-    private Transform defenseLine;
+    public float moveSpeed = 1f;
+
+    private Transform player;
 
     void Start()
     {
-        defenseLine = GameObject.FindGameObjectWithTag("DefenseLine")?.transform;
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogWarning($"{name}: Player not found in scene.");
+        }
     }
 
-    public void Reactivate()
+    void Update()
     {
-        int direction = Random.Range(0, isFake ? 2 : 3);
-
-        Vector3 moveDir = Vector3.zero;
-
-        switch (direction)
+        if (!isFake && LightController.lightsOff && player != null)
         {
-            case 0: moveDir = Vector3.left; break;
-            case 1: moveDir = Vector3.right; break;
-            case 2:
-                if (!isFake) moveDir = Vector3.down;
-                break;
+            Vector2 direction = (player.position - transform.position).normalized;
+            transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+            Debug.DrawLine(transform.position, player.position, Color.green);
         }
-
-        transform.position += moveDir * moveAmount;
     }
 }

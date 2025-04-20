@@ -32,9 +32,10 @@ public class PlayerShooting : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
 
-        Vector2 direction = (mousePos - firePoint.position).normalized;
+        Vector2 direction = (mousePos - transform.position).normalized;
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        Debug.DrawLine(transform.position, transform.position + (Vector3)direction * 2f, Color.red, 1f);
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().linearVelocity = direction * 10f;
 
         activeBullet = bullet;
