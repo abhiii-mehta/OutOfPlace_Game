@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\playershooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playershooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\playershooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playershooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\cursorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cursorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DefenseTrigger.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\DefenseTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DefenseTrigger.cs",
@@ -75,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Bullet.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -111,15 +111,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "PlayerShooting.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PlayerShooting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerShooting.cs",
               "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PlayerShooting.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerShooting.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCIAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T22:27:28.437Z"
+              "WhenOpened": "2025-04-18T22:27:28.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PropBehaviour.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PropBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PropBehaviour.cs",
@@ -143,12 +144,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PropBehaviour.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:35:57.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T14:35:57.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PropSpawner.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PropSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PropSpawner.cs",
