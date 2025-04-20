@@ -18,6 +18,10 @@ public class PropBehavior : MonoBehaviour
         {
             Debug.LogWarning($"{name}: Player not found in scene.");
         }
+        if (!isFake && GameManager.instance != null)
+        {
+            GameManager.instance.RegisterRealProp();
+        }
     }
 
     void Update()
