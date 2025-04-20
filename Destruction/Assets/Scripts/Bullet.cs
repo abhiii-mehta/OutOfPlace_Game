@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     private void Start()
     {
-        Destroy(gameObject, 3f); 
+        Destroy(gameObject, 3f);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -12,16 +12,20 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("Prop"))
         {
             PropBehavior prop = other.GetComponent<PropBehavior>();
-            if (prop != null && !prop.isFake)
+            if (prop != null)
             {
-                GameManager.instance?.OnRealPropDestroyed();
+                prop.DestroyWithSpriteSwap();
+
+                if (!prop.isFake)
+                {
+                    GameManager.instance?.OnRealPropDestroyed();
+                }
+
+                Debug.Log(" Hit prop: " + other.name);
             }
 
-            Debug.Log(" Hit prop: " + other.name);
-            Destroy(other.gameObject);
             Destroy(gameObject);
             FindAnyObjectByType<PlayerShooting>()?.ClearBullet();
         }
     }
-
 }

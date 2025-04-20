@@ -274,6 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFake: 0
   moveSpeed: 1
+  destroyedSprite: {fileID: 0}
 --- !u!1 &661104062
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFake: 0
   moveSpeed: 1
+  destroyedSprite: {fileID: 0}
 --- !u!1 &921078793
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFake: 0
   moveSpeed: 1
+  destroyedSprite: {fileID: 0}
 --- !u!1001 &1220325095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1213,6 +1216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFake: 1
   moveSpeed: 0
+  destroyedSprite: {fileID: 0}
 --- !u!1 &2102091963
 GameObject:
   m_ObjectHideFlags: 0
