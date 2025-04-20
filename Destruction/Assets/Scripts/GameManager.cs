@@ -1,17 +1,22 @@
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
     public int totalRealProps = 0;
     public bool gameOver = false;
+
     [Header("Endgame UI")]
     public GameObject youWinPanel;
     public GameObject gameOverPanel;
 
     [Header("Level Exit")]
     public LevelExit exit;
+
+    [Header("UI")]
+    public TextMeshProUGUI propCounterText;
 
     void Awake()
     {
@@ -24,6 +29,7 @@ public class GameManager : MonoBehaviour
     public void RegisterRealProp()
     {
         totalRealProps++;
+        UpdatePropUI();
     }
 
     public void OnRealPropReachedPlayer()
@@ -39,13 +45,13 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-
     public void OnRealPropDestroyed()
     {
         if (gameOver) return;
 
         totalRealProps--;
         Debug.Log(" Real prop destroyed. Remaining: " + totalRealProps);
+        UpdatePropUI();
 
         if (totalRealProps <= 0)
         {
@@ -56,7 +62,17 @@ public class GameManager : MonoBehaviour
                 youWinPanel.SetActive(true);
 
             Time.timeScale = 0f;
+
+            if (exit != null)
+                exit.UnlockExit();
         }
     }
 
+    void UpdatePropUI()
+    {
+        if (propCounterText != null)
+        {
+            propCounterText.text = "Props Left: " + totalRealProps;
+        }
+    }
 }

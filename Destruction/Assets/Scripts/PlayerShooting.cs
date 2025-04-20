@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -10,12 +12,14 @@ public class PlayerShooting : MonoBehaviour
 
     private int currentBullets;
     private GameObject activeBullet;
+    public TextMeshProUGUI bulletCounterText;
+
 
     void Start()
     {
         currentBullets = maxBullets;
+        UpdateBulletUI(); 
     }
-
     void Update()
     {
         shootTimer += Time.deltaTime;
@@ -25,7 +29,6 @@ public class PlayerShooting : MonoBehaviour
             Shoot();
         }
     }
-
 
     void Shoot()
     {
@@ -42,10 +45,19 @@ public class PlayerShooting : MonoBehaviour
         currentBullets--;
         shootTimer = 0f;
 
+        UpdateBulletUI();
     }
 
     public void ClearBullet()
     {
         activeBullet = null;
+    }
+
+    void UpdateBulletUI()
+    {
+        if (bulletCounterText != null)
+        {
+            bulletCounterText.text = "Bullets: " + currentBullets;
+        }
     }
 }
