@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\lampflicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lampflicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\playershooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playershooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\lampflicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lampflicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,21 +62,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LampFlicker.cs",
-              "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LampFlicker.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LampFlicker.cs",
-              "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LampFlicker.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LampFlicker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:43:46.222Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -163,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Bullet.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -175,15 +162,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PlayerShooting.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PlayerShooting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerShooting.cs",
               "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PlayerShooting.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerShooting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA7wDIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T22:27:28.437Z"
+              "WhenOpened": "2025-04-18T22:27:28.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -199,15 +187,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PropBehaviour.cs",
               "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PropBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PropBehaviour.cs",
               "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PropBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\PropBehaviour.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvzgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:35:57.017Z"
+              "WhenOpened": "2025-04-17T14:35:57.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LampFlicker.cs",
+              "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LampFlicker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LampFlicker.cs",
+              "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LampFlicker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LampFlicker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:43:46.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8421548586424768715}
   - component: {fileID: 5248409154826454943}
-  - component: {fileID: 2542583483597949527}
   - component: {fileID: 9173003833922307115}
   - component: {fileID: 1085149957301205671}
+  - component: {fileID: 2542583483597949527}
   - component: {fileID: 1395792926923409689}
   - component: {fileID: 7200455017587071912}
   m_Layer: 0
@@ -93,22 +93,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2542583483597949527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2842882906991266663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bd3830f8810c1e438f479631ab439af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6912796769083183545, guid: 3cf0de3df7bc53d49b555db1c6eea4b6, type: 3}
-  firePoint: {fileID: 896711556818465237}
-  maxBullets: 20
-  shootCooldown: 1
 --- !u!50 &9173003833922307115
 Rigidbody2D:
   serializedVersion: 5
@@ -173,6 +157,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &2542583483597949527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2842882906991266663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd3830f8810c1e438f479631ab439af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6912796769083183545, guid: 3cf0de3df7bc53d49b555db1c6eea4b6, type: 3}
+  firePoint: {fileID: 896711556818465237}
+  maxBullets: 20
+  shootCooldown: 1
+  bulletCounterText: {fileID: 0}
 --- !u!114 &1395792926923409689
 MonoBehaviour:
   m_ObjectHideFlags: 0
