@@ -6,9 +6,11 @@ public class PropBehavior : MonoBehaviour
     public float moveSpeed = 1f;
 
     private Transform player;
-
+    public Sprite destroyedSprite;
+    private SpriteRenderer sr;
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
@@ -17,6 +19,10 @@ public class PropBehavior : MonoBehaviour
         else
         {
             Debug.LogWarning($"{name}: Player not found in scene.");
+        }
+        if (!isFake && GameManager.instance != null)
+        {
+            GameManager.instance.RegisterRealProp();
         }
     }
 
@@ -34,4 +40,19 @@ public class PropBehavior : MonoBehaviour
             }
         }
     }
+
+    public void DestroyWithSpriteSwap()
+    {
+        if (destroyedSprite != null)
+        {
+            sr.sprite = destroyedSprite;
+            GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject, 1.5f); // Let player see the broken version for a moment
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
