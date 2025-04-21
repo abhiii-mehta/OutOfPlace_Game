@@ -1584,10 +1584,10 @@ TextureImporter:
       name: Interiors_free_16x16_32
       rect:
         serializedVersion: 2
-        x: 96
-        y: 1200
-        width: 16
-        height: 16
+        x: 97
+        y: 1201
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3146,10 +3146,10 @@ TextureImporter:
       name: Interiors_free_16x16_103
       rect:
         serializedVersion: 2
-        x: 0
-        y: 828
-        width: 16
-        height: 25
+        x: 1
+        y: 830
+        width: 14
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3410,10 +3410,10 @@ TextureImporter:
       name: Interiors_free_16x16_115
       rect:
         serializedVersion: 2
-        x: 48
-        y: 793
-        width: 14
-        height: 23
+        x: 49
+        y: 795
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3652,10 +3652,10 @@ TextureImporter:
       name: Interiors_free_16x16_126
       rect:
         serializedVersion: 2
-        x: 82
-        y: 761
-        width: 14
-        height: 23
+        x: 83
+        y: 763
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
