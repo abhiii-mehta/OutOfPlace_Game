@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: -5557776753522731094}
   m_Layer: 0
   m_Name: Monitor1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,4 +209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFake: 0
   moveSpeed: 1
+  roomBoundary: {fileID: 0}
+  aggroRange: 5
   destroyedSprite: {fileID: 0}
