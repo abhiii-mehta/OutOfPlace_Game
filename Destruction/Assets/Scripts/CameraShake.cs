@@ -4,11 +4,15 @@ public class CameraShake : MonoBehaviour
 {
     public static CameraShake instance;
 
-    private Vector3 originalPos;
+    public Transform target;
+    public Vector3 offset = new Vector3(0, 0, -10f);
+    public bool followX = true;
+    public bool followY = true;
+
     private float shakeDuration = 0f;
     private float shakeMagnitude = 0.4f;
 
-    void Awake()
+    private void Awake()
     {
         if (instance == null)
             instance = this;
@@ -16,23 +20,24 @@ public class CameraShake : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void Start()
-    {
-        originalPos = transform.localPosition;
-    }
-
     void LateUpdate()
     {
+        if (target == null) return;
+
+        Vector3 newPos = transform.position;
+
+        if (followX) newPos.x = target.position.x;
+        if (followY) newPos.y = target.position.y;
+        newPos.z = offset.z;
+
         if (shakeDuration > 0)
         {
             Vector2 shakeOffset = Random.insideUnitCircle * shakeMagnitude;
-            transform.localPosition = originalPos + new Vector3(shakeOffset.x, shakeOffset.y, 0);
+            newPos += new Vector3(shakeOffset.x, shakeOffset.y, 0);
             shakeDuration -= Time.unscaledDeltaTime;
         }
-        else
-        {
-            transform.localPosition = originalPos;
-        }
+
+        transform.position = newPos;
     }
 
     public void Shake(float duration, float magnitude)

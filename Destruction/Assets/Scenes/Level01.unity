@@ -10364,6 +10364,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 6655978083008217263, guid: 91cf4d9783057f840a76cab8df8a3279, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1836797786}
     - target: {fileID: 7994052528481095538, guid: 91cf4d9783057f840a76cab8df8a3279, type: 3}
       propertyPath: m_LocalPosition.x
       value: -562.78
@@ -10376,7 +10380,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMechanic
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4679114106339407934, guid: 91cf4d9783057f840a76cab8df8a3279, type: 3}
     m_RemovedGameObjects:
     - {fileID: 740111481424027334, guid: 91cf4d9783057f840a76cab8df8a3279, type: 3}
     m_AddedGameObjects:
@@ -10695,7 +10700,8 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4439896197945861562, guid: 03a6d2917d09b254c9c9125243499968, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03a6d2917d09b254c9c9125243499968, type: 3}
