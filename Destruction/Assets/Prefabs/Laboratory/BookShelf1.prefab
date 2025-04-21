@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8927980576479677866}
   m_Layer: 0
   m_Name: BookShelf1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFake: 0
   moveSpeed: 1
+  roomBoundary: {fileID: 0}
+  aggroRange: 5
   destroyedSprite: {fileID: 0}
 --- !u!1 &4331254572925580662
 GameObject:
