@@ -398,6 +398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ACU
       objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
+      objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1631,6 +1635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ACU (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
+      objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2094,6 +2102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ACU (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
+      objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2248,6 +2260,10 @@ PrefabInstance:
     - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_Name
       value: ACU (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
       objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
@@ -2511,6 +2527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ACU (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
+      objectReference: {fileID: 0}
     - target: {fileID: 6252150060252526829, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -2612,6 +2632,10 @@ PrefabInstance:
     - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_Name
       value: ACU (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
       objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
@@ -2857,7 +2881,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 49
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
@@ -2952,7 +2976,7 @@ GameObject:
   - component: {fileID: 772238611}
   - component: {fileID: 772238610}
   - component: {fileID: 772238609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Room_Area3
   m_TagString: RoomBoundary
   m_Icon: {fileID: 0}
@@ -3307,7 +3331,7 @@ GameObject:
   - component: {fileID: 1130248637}
   - component: {fileID: 1130248636}
   - component: {fileID: 1130248638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Room_Area1
   m_TagString: RoomBoundary
   m_Icon: {fileID: 0}
@@ -9530,6 +9554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ACU (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
+      objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9703,6 +9731,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1102629379235009690, guid: 1854238cbad0cfb4493421b3d432324d, type: 3}
+      propertyPath: m_text
+      value: 'Props: X'
+      objectReference: {fileID: 0}
     - target: {fileID: 3514332397545826369, guid: 1854238cbad0cfb4493421b3d432324d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.583077
@@ -9803,6 +9835,10 @@ PrefabInstance:
     - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_Name
       value: ACU (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730727962861840397, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
+      propertyPath: m_TagString
+      value: Prop
       objectReference: {fileID: 0}
     - target: {fileID: 7435169876234102835, guid: ba2b20033fd5b3944b6b4ae5624f4bd1, type: 3}
       propertyPath: m_IsActive
@@ -10324,6 +10360,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 4933648391156811814, guid: 91cf4d9783057f840a76cab8df8a3279, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7994052528481095538, guid: 91cf4d9783057f840a76cab8df8a3279, type: 3}
       propertyPath: m_LocalPosition.x
       value: -562.78
@@ -10566,6 +10606,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 896711556818465237, guid: 03a6d2917d09b254c9c9125243499968, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 896711556818465237, guid: 03a6d2917d09b254c9c9125243499968, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 2542583483597949527, guid: 03a6d2917d09b254c9c9125243499968, type: 3}
       propertyPath: bulletCounterText
       value: 
@@ -11072,7 +11120,7 @@ GameObject:
   - component: {fileID: 2040339200}
   - component: {fileID: 2040339199}
   - component: {fileID: 2040339198}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Room_Area2
   m_TagString: RoomBoundary
   m_Icon: {fileID: 0}

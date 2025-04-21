@@ -13,6 +13,8 @@ public class PropBehavior : MonoBehaviour
     private bool playerInRoom = false;
     void Start()
     {
+        Debug.Log("Prop Tag: " + tag);
+        Debug.Log("Prop Layer: " + gameObject.layer);
         sr = GetComponent<SpriteRenderer>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -24,9 +26,17 @@ public class PropBehavior : MonoBehaviour
             Debug.LogWarning($"{name}: Player not found in scene.");
         }
 
-        if (!isFake && GameManager.instance != null)
+        if (!isFake)
         {
-            GameManager.instance.RegisterRealProp();
+            if (GameManager.instance != null)
+            {
+                Debug.Log("Registering real prop: " + name);
+                GameManager.instance.RegisterRealProp();
+            }
+            else
+            {
+                Debug.LogWarning("GameManager not found when trying to register: " + name);
+            }
         }
     }
 
@@ -71,4 +81,5 @@ public class PropBehavior : MonoBehaviour
         Gizmos.color = isFake ? Color.yellow : Color.red;
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
+
 }

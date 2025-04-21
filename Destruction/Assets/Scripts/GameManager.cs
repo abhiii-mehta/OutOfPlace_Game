@@ -29,8 +29,10 @@ public class GameManager : MonoBehaviour
     public void RegisterRealProp()
     {
         totalRealProps++;
+        Debug.Log("Registered Real Prop. Total = " + totalRealProps);
         UpdatePropUI();
     }
+
 
     public void OnRealPropReachedPlayer()
     {

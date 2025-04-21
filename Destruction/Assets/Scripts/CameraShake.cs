@@ -6,7 +6,7 @@ public class CameraShake : MonoBehaviour
 
     private Vector3 originalPos;
     private float shakeDuration = 0f;
-    private float shakeMagnitude = 0.1f;
+    private float shakeMagnitude = 0.4f;
 
     void Awake()
     {
