@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -528800515, guid: 9d7b8805464a782458720a888b7c0d86, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -517029396768776803, guid: 9d7b8805464a782458720a888b7c0d86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 3011843045786303160}
   - component: {fileID: 4776173913167779021}
   m_Layer: 0
-  m_Name: Desk
+  m_Name: Desk2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,5 +164,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.9}
+  m_Size: {x: 0.82, y: 1.45}
   m_EdgeRadius: 0
