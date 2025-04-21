@@ -1320,10 +1320,10 @@ TextureImporter:
       name: Interiors_free_16x16_20
       rect:
         serializedVersion: 2
-        x: 92
-        y: 1225
-        width: 40
-        height: 39
+        x: 93
+        y: 1223
+        width: 38
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1408,10 +1408,10 @@ TextureImporter:
       name: Interiors_free_16x16_24
       rect:
         serializedVersion: 2
-        x: 143
+        x: 144
         y: 1225
-        width: 18
-        height: 39
+        width: 16
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1672,10 +1672,10 @@ TextureImporter:
       name: Interiors_free_16x16_36
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1171
-        width: 28
-        height: 20
+        x: 3
+        y: 1172
+        width: 26
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7373,7 +7373,7 @@ TextureImporter:
         x: 12
         y: 147
         width: 14
-        height: 26
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7395,7 +7395,7 @@ TextureImporter:
         x: 32
         y: 147
         width: 14
-        height: 26
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7582,6 +7582,28 @@ TextureImporter:
       bones: []
       spriteID: 1fa0b85ef3b1b8b48925f9817ea08033
       internalID: -528800515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interiors_free_16x16_305
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1247
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ed5bf9cc1f21349a1cc8ccc32a6695
+      internalID: 556439767
       vertices: []
       indices: 
       edges: []
@@ -7830,6 +7852,7 @@ TextureImporter:
       Interiors_free_16x16_302: 882670260
       Interiors_free_16x16_303: -779157746
       Interiors_free_16x16_304: -528800515
+      Interiors_free_16x16_305: 556439767
       Interiors_free_16x16_31: -2311555400739420033
       Interiors_free_16x16_32: 1589721642652450115
       Interiors_free_16x16_33: -4711008204011029277
