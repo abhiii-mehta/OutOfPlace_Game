@@ -2,18 +2,23 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;       
-    public float smoothSpeed = 0.125f;
-    public Vector3 offset;         
+    public Transform target;
+    public bool followX = true;
+    public Vector3 offset = new Vector3(0, 0, -10f); 
+    public bool followY = true;
 
     void LateUpdate()
     {
-        if (target == null) return;
+        if (target != null)
+        {
+            Vector3 newPos = transform.position;
 
-        Vector3 desiredPosition = target.position + offset;
-        desiredPosition.z = transform.position.z; // Lock Z
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            if (followX) newPos.x = target.position.x;
+            if (followY) newPos.y = target.position.y;
 
-        transform.position = smoothedPosition;
+            newPos.z = offset.z;
+
+            transform.position = newPos;
+        }
     }
 }
