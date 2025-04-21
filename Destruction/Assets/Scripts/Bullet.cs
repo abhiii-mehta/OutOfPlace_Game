@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private void Start()
+    public float lifetime = 2f;
+
+    void Start()
     {
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, lifetime);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Prop"))
         {
@@ -20,12 +22,13 @@ public class Bullet : MonoBehaviour
                 {
                     GameManager.instance?.OnRealPropDestroyed();
                 }
-
-                Debug.Log(" Hit prop: " + other.name);
             }
 
             Destroy(gameObject);
-            FindAnyObjectByType<PlayerShooting>()?.ClearBullet();
+        }
+        else if (!other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
         }
     }
 }

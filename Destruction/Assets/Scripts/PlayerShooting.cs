@@ -1,30 +1,28 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class PlayerShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    public Transform firePoint;
     public int maxBullets = 20;
-    public float shootCooldown = 1f;
-    private float shootTimer = 0f;
-
-    private int currentBullets;
-    private GameObject activeBullet;
+    public float shootCooldown = 0.5f;
     public TextMeshProUGUI bulletCounterText;
 
+    private int currentBullets;
+    private float shootTimer = 0f;
+    private GameObject activeBullet;
 
     void Start()
     {
         currentBullets = maxBullets;
-        UpdateBulletUI(); 
+        UpdateBulletUI();
     }
+
     void Update()
     {
         shootTimer += Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0) && currentBullets > 0 && activeBullet == null && shootTimer >= shootCooldown)
+        if (Input.GetMouseButtonDown(0) && currentBullets > 0 && shootTimer >= shootCooldown)
         {
             Shoot();
         }
@@ -35,11 +33,11 @@ public class PlayerShooting : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
 
-        Vector2 direction = (mousePos - transform.position).normalized;
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        Debug.DrawLine(transform.position, transform.position + (Vector3)direction * 2f, Color.red, 1f);
+        Vector2 shootDirection = (mousePos - transform.position).normalized;
 
-        bullet.GetComponent<Rigidbody2D>().linearVelocity = direction * 10f;
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.linearVelocity = shootDirection * 10f;
 
         activeBullet = bullet;
         currentBullets--;
@@ -57,7 +55,7 @@ public class PlayerShooting : MonoBehaviour
     {
         if (bulletCounterText != null)
         {
-            bulletCounterText.text = "Bullets: " + currentBullets;
+            bulletCounterText.text = $"Bullets: {currentBullets}";
         }
     }
 }
