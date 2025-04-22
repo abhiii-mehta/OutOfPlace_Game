@@ -15,7 +15,7 @@ public class PropBehavior : MonoBehaviour
     {
         Debug.Log("Prop Tag: " + tag);
         Debug.Log("Prop Layer: " + gameObject.layer);
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponentInChildren<SpriteRenderer>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
@@ -68,7 +68,7 @@ public class PropBehavior : MonoBehaviour
         {
             sr.sprite = destroyedSprite;
             GetComponent<Collider2D>().enabled = false;
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 0.3f);
         }
         else
         {
