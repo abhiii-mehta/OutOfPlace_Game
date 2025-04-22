@@ -63,13 +63,19 @@ public class GameManager : MonoBehaviour
 
     void LevelCompleted()
     {
-        if (SceneManager.GetActiveScene().name == "Level03")
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        if (sceneName == "Level03")
         {
             global::MenuManager.instance.ShowWinPanel();
         }
+        else if (sceneName == "Level02")
+        {
+            ShowLevelMessage("Elevator is working again!\nIt's next to the conference room.");
+        }
         else
         {
-            ShowLevelMessage("All real props destroyed. Find the stairs.");
+            ShowLevelMessage("All real props destroyed.\nFind the stairs.");
         }
     }
 
