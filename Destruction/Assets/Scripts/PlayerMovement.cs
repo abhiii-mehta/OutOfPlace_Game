@@ -7,18 +7,23 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    private Animator animator;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // Get input from WASD or Arrow Keys
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
-        moveInput.Normalize(); // Prevent faster diagonal movement
+        moveInput.Normalize();
+
+        animator.SetFloat("MoveX", moveInput.x);
+        animator.SetFloat("MoveY", moveInput.y);
+        animator.SetBool("IsMoving", moveInput.sqrMagnitude > 0.01f);
     }
 
     void FixedUpdate()
