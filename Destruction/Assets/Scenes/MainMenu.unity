@@ -482,7 +482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 893371078152476437, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -46
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 1141029025993040168, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -638,22 +638,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182939271879322416, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
       propertyPath: m_text
-      value: 'Programming: Abhi
-
-
-        Level Design: Ainesh
-
-
-        Art: Ainesh
-
-
-        UI:
-        Abhi'
+      value: "Programming: Abhi\nLevel Design: Ainesh\nOriginal assets by: LimeZu\nArt:
+        Ainesh\nUI: Abhi\nMusic: TheLlywellyn \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182939271879322416, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
+      propertyPath: m_fontSize
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4182939271879322416, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: b0363c5ed0523864485fc3fc2e91db9d, type: 2}
+    - target: {fileID: 4182939271879322416, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4182939271879322416, guid: e2690f88424d4e94b98110fb6512874b, type: 3}
       propertyPath: m_sharedMaterial
       value: 
