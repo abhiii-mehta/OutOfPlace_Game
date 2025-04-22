@@ -18,9 +18,17 @@ public class LightController : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(DelayedFlickerStart());
+    }
+    IEnumerator DelayedFlickerStart()
+    {
+        lightsOff = false;
+        if (globalLight != null) globalLight.intensity = 0.1f;
+
+        yield return new WaitForSeconds(4.5f);
+
         StartCoroutine(FlickerLoop());
     }
-
     IEnumerator FlickerLoop()
     {
         while (true)
