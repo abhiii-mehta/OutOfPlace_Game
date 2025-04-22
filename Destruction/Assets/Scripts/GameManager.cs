@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -52,21 +54,41 @@ public class GameManager : MonoBehaviour
         if (gameOver) return;
 
         totalRealProps--;
-        Debug.Log(" Real prop destroyed. Remaining: " + totalRealProps);
+        Debug.Log("Real prop destroyed. Remaining: " + totalRealProps);
         UpdatePropUI();
 
         if (totalRealProps <= 0)
         {
-            Debug.Log(" All real props eliminated — YOU WIN!");
             gameOver = true;
+            if (exit != null) exit.UnlockExit();
 
-            if (youWinPanel != null)
-                youWinPanel.SetActive(true);
+            string currentScene = SceneManager.GetActiveScene().name;
 
-            Time.timeScale = 0f;
+            if (currentScene == "Level03")
+            {
+                Debug.Log("Final level complete — YOU WIN!");
+                if (youWinPanel != null)
+                    youWinPanel.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Debug.Log("Level cleared. Find the stairs to go to the next floor...");
+                StartCoroutine(ShowLevelCompleteMessage());
+            }
+        }
+    }
 
-            if (exit != null)
-                exit.UnlockExit();
+    public TextMeshProUGUI levelMessageText;
+
+    IEnumerator ShowLevelCompleteMessage()
+    {
+        if (levelMessageText != null)
+        {
+            levelMessageText.text = "Find the stairs to go to the next floor...";
+            levelMessageText.gameObject.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            levelMessageText.gameObject.SetActive(false);
         }
     }
 
