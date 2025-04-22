@@ -10,11 +10,23 @@ public class MenuManager : MonoBehaviour
     public GameObject loadingScreen;
     [Header("Gameplay UI")]
     public GameObject pausePanel;
+    [Header("Endgame UI")]
+    public GameObject winPanel;
+    public GameObject losePanel;
 
     private bool isPaused = false;
 
     private bool soundPanelVisible = false;
     private bool creditsPanelVisible = false;
+    public static MenuManager instance;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     public void ToggleSoundPanel()
     {
@@ -126,6 +138,19 @@ public class MenuManager : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1f;
         pausePanel.SetActive(false);
+    }
+
+
+    public void ShowWinPanel()
+    {
+        winPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ShowLosePanel()
+    {
+        losePanel.SetActive(true);
+        Time.timeScale = 0f;
     }
 
 

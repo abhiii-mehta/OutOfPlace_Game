@@ -1,26 +1,35 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+
 public class LevelExit : MonoBehaviour
 {
-    private bool isUnlocked = false;
+    [Tooltip("Name of the next scene to load")]
     public string nextSceneName;
+
+    private bool canExit = false;
+
+    private void Update()
+    {
+        if (!canExit && GameManager.instance != null && GameManager.instance.totalRealProps <= 0)
+        {
+            canExit = true;
+            Debug.Log("Exit unlocked!");
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isUnlocked) return;
+        if (!canExit) return;
 
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player reached exit!");
-            GameManager.instance?.StartCoroutine(FadeAndLoadNextLevel(nextSceneName));
+            if (GameManager.instance != null)
+                GameManager.instance.StartCoroutine(FadeAndLoadNextLevel(nextSceneName));
+            else
+                SceneManager.LoadScene(nextSceneName);
         }
-    }
-
-    public void UnlockExit()
-    {
-        isUnlocked = true;
-        Debug.Log("Exit unlocked!");
     }
 
     IEnumerator FadeAndLoadNextLevel(string sceneName)

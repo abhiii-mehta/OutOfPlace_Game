@@ -1,52 +1,50 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-using System.Collections;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    [Header("UI Elements")]
+    public TextMeshProUGUI levelMessageText;
+    public TextMeshProUGUI propCounterText;
+
+    [Header("Gameplay")]
     public int totalRealProps = 0;
     public bool gameOver = false;
-
-    [Header("Endgame UI")]
-    public GameObject youWinPanel;
-    public GameObject gameOverPanel;
-
-    [Header("Level Exit")]
-    public LevelExit exit;
-
-    [Header("UI")]
-    public TextMeshProUGUI propCounterText;
 
     void Awake()
     {
         if (instance == null)
+        {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
         else
+        {
             Destroy(gameObject);
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (levelMessageText == null)
+        {
+            GameObject messageObj = GameObject.Find("LevelExitText");
+            if (messageObj != null)
+            {
+                levelMessageText = messageObj.GetComponent<TextMeshProUGUI>();
+            }
+        }
     }
 
     public void RegisterRealProp()
     {
         totalRealProps++;
-        Debug.Log("Registered Real Prop. Total = " + totalRealProps);
         UpdatePropUI();
-    }
-
-
-    public void OnRealPropReachedPlayer()
-    {
-        if (gameOver) return;
-
-        Debug.Log(" A real prop touched the player — YOU LOSE!");
-        gameOver = true;
-
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(true);
-
-        Time.timeScale = 0f;
     }
 
     public void OnRealPropDestroyed()
@@ -54,49 +52,51 @@ public class GameManager : MonoBehaviour
         if (gameOver) return;
 
         totalRealProps--;
-        Debug.Log("Real prop destroyed. Remaining: " + totalRealProps);
         UpdatePropUI();
 
         if (totalRealProps <= 0)
         {
             gameOver = true;
-            if (exit != null) exit.UnlockExit();
-
-            string currentScene = SceneManager.GetActiveScene().name;
-
-            if (currentScene == "Level03")
-            {
-                Debug.Log("Final level complete — YOU WIN!");
-                if (youWinPanel != null)
-                    youWinPanel.SetActive(true);
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                Debug.Log("Level cleared. Find the stairs to go to the next floor...");
-                StartCoroutine(ShowLevelCompleteMessage());
-            }
+            LevelCompleted();
         }
     }
 
-    public TextMeshProUGUI levelMessageText;
+    void LevelCompleted()
+    {
+        if (SceneManager.GetActiveScene().name == "Level03")
+        {
+            global::MenuManager.instance.ShowWinPanel();
+        }
+        else
+        {
+            ShowLevelMessage("All real props destroyed. Find the stairs.");
+        }
+    }
 
-    IEnumerator ShowLevelCompleteMessage()
+    public void ShowLevelMessage(string msg)
     {
         if (levelMessageText != null)
         {
-            levelMessageText.text = "Find the stairs to go to the next floor...";
+            levelMessageText.text = msg;
             levelMessageText.gameObject.SetActive(true);
-            yield return new WaitForSeconds(3f);
-            levelMessageText.gameObject.SetActive(false);
         }
     }
 
-    void UpdatePropUI()
+    public void OnRealPropReachedPlayer()
+    {
+        if (gameOver) return;
+
+        Debug.Log(" A real prop touched the player — YOU LOSE!");
+        gameOver = true;
+        MenuManager.instance.ShowLosePanel();
+    }
+
+    public void UpdatePropUI()
     {
         if (propCounterText != null)
         {
             propCounterText.text = "Props Left: " + totalRealProps;
         }
     }
+
 }
