@@ -124,7 +124,7 @@ MonoBehaviour:
   moveSpeed: 1
   roomBoundary: {fileID: 0}
   aggroRange: 5
-  destroyedSprite: {fileID: 0}
+  destroyedSprite: {fileID: 3926880706297817121, guid: 4e421b7adab188c4685ced7edb78aa23, type: 3}
 --- !u!1 &4331254572925580662
 GameObject:
   m_ObjectHideFlags: 0

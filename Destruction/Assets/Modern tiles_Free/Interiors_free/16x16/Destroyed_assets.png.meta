@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 4e421b7adab188c4685ced7edb78aa23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1920037358832959741
+    second: Destroyed_assets_0
+  - first:
+      213: -4760779458657169622
+    second: Destroyed_assets_1
+  - first:
+      213: 7478974848674397948
+    second: Destroyed_assets_2
+  - first:
+      213: -8890095512074523696
+    second: Destroyed_assets_3
+  - first:
+      213: 2883474625382708065
+    second: Destroyed_assets_4
+  - first:
+      213: 3369409112072474953
+    second: Destroyed_assets_5
+  - first:
+      213: -7191180708991384706
+    second: Destroyed_assets_6
+  - first:
+      213: -3905712406259358622
+    second: Destroyed_assets_7
+  - first:
+      213: -539663652271411593
+    second: Destroyed_assets_8
+  - first:
+      213: -6357489652777724859
+    second: Destroyed_assets_9
+  - first:
+      213: 1259310470385949460
+    second: Destroyed_assets_10
+  - first:
+      213: -3231954910857680868
+    second: Destroyed_assets_11
+  - first:
+      213: -6769557023648730116
+    second: Destroyed_assets_12
+  - first:
+      213: -994067420186292036
+    second: Destroyed_assets_13
+  - first:
+      213: 1814109249418336818
+    second: Destroyed_assets_14
+  - first:
+      213: -4153634637651277534
+    second: Destroyed_assets_15
+  - first:
+      213: 6841082286784579734
+    second: Destroyed_assets_16
+  - first:
+      213: 7465043037090885299
+    second: Destroyed_assets_17
+  - first:
+      213: 3926880706297817121
+    second: Destroyed_assets_18
+  - first:
+      213: -5557337855953381299
+    second: Destroyed_assets_19
+  - first:
+      213: -2358239060703947650
+    second: Destroyed_assets_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Destroyed_assets_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1272
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f3847e138aa55e0800000000000000
+      internalID: -1920037358832959741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1247
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f43c85e405eedb0800000000000000
+      internalID: -4760779458657169622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1246
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe7153eff7aac760800000000000000
+      internalID: 7478974848674397948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1209
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbe087cb3900a480800000000000000
+      internalID: -8890095512074523696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1145
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163f9ccf4e8240820800000000000000
+      internalID: 2883474625382708065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1119
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9415b0c4cbb82ce20800000000000000
+      internalID: 3369409112072474953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1090
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e734de4ee3bc33c90800000000000000
+      internalID: -7191180708991384706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 749
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2642316824f1cc9c0800000000000000
+      internalID: -3905712406259358622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 746
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e2c2c74cab288f0800000000000000
+      internalID: -539663652271411593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 706
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54456fe18d8a5c7a0800000000000000
+      internalID: -6357489652777724859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 714
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bd8416338f97110800000000000000
+      internalID: 1259310470385949460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 678
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18af38d12ac523d0800000000000000
+      internalID: -3231954910857680868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 600
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3baaee0c3bd02a0800000000000000
+      internalID: -6769557023648730116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 597
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0d109b2fc5432f0800000000000000
+      internalID: -994067420186292036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 610
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a945330c20d2910800000000000000
+      internalID: 1814109249418336818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 454
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2298900dd435b56c0800000000000000
+      internalID: -4153634637651277534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 454
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698030f181860fe50800000000000000
+      internalID: 6841082286784579734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 258
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be2eca3719299760800000000000000
+      internalID: 7465043037090885299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_18
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 216
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128673662351f7630800000000000000
+      internalID: 3926880706297817121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_19
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 168
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48511ff9ae50e2b0800000000000000
+      internalID: -5557337855953381299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e745a4b911ad54fd0800000000000000
+      internalID: -2358239060703947650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 216
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7203018aa460d90418b76a09b05f0100
+      internalID: 332245831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_22
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 216
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a1b33fa8408074a89e4ca49f11a426
+      internalID: 825739517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_23
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 168
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f453c9cfa72e2a14f864d4a67be7dec3
+      internalID: 1560328725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_assets_24
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 168
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f72f853167ea3643828ad1d0b5debdb
+      internalID: 1092301964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 92ee2b326321cd34391cd8e120baf71a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Destroyed_assets_0: -1920037358832959741
+      Destroyed_assets_1: -4760779458657169622
+      Destroyed_assets_10: 1259310470385949460
+      Destroyed_assets_11: -3231954910857680868
+      Destroyed_assets_12: -6769557023648730116
+      Destroyed_assets_13: -994067420186292036
+      Destroyed_assets_14: 1814109249418336818
+      Destroyed_assets_15: -4153634637651277534
+      Destroyed_assets_16: 6841082286784579734
+      Destroyed_assets_17: 7465043037090885299
+      Destroyed_assets_18: 3926880706297817121
+      Destroyed_assets_19: -5557337855953381299
+      Destroyed_assets_2: 7478974848674397948
+      Destroyed_assets_20: -2358239060703947650
+      Destroyed_assets_21: 332245831
+      Destroyed_assets_22: 825739517
+      Destroyed_assets_23: 1560328725
+      Destroyed_assets_24: 1092301964
+      Destroyed_assets_3: -8890095512074523696
+      Destroyed_assets_4: 2883474625382708065
+      Destroyed_assets_5: 3369409112072474953
+      Destroyed_assets_6: -7191180708991384706
+      Destroyed_assets_7: -3905712406259358622
+      Destroyed_assets_8: -539663652271411593
+      Destroyed_assets_9: -6357489652777724859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
