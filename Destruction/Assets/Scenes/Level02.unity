@@ -323,7 +323,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2358554265597103790, guid: 83c1331d1840cb242aceb0defff3f2ed, type: 3}
       propertyPath: moveSpeed
-      value: 0.04
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -2358554265597103790, guid: 83c1331d1840cb242aceb0defff3f2ed, type: 3}
       propertyPath: roomBoundary
@@ -662,6 +662,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966189572}
     m_Modifications:
+    - target: {fileID: 2636016265393765856, guid: 502c227f13f49cf4da9cec98c6336fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 2.0244346
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636016265393765856, guid: 502c227f13f49cf4da9cec98c6336fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.16278267
+      objectReference: {fileID: 0}
     - target: {fileID: 2637553289171963770, guid: 502c227f13f49cf4da9cec98c6336fe6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.36
@@ -708,7 +716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946766506749518634, guid: 502c227f13f49cf4da9cec98c6336fe6, type: 3}
       propertyPath: moveSpeed
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3946766506749518634, guid: 502c227f13f49cf4da9cec98c6336fe6, type: 3}
       propertyPath: roomBoundary
@@ -6884,7 +6892,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2217567654046776560, guid: ce4ffb2906ff4a946a6576f82b7ce341, type: 3}
       propertyPath: moveSpeed
-      value: 0.03
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -2217567654046776560, guid: ce4ffb2906ff4a946a6576f82b7ce341, type: 3}
       propertyPath: roomBoundary
@@ -8759,6 +8767,22 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2636016265393765856, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
+      propertyPath: m_Size.x
+      value: 2.290514
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636016265393765856, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
+      propertyPath: m_Size.y
+      value: 5.6092057
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636016265393765856, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009757042
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636016265393765856, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.6296022
+      objectReference: {fileID: 0}
     - target: {fileID: 2637553289171963770, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.46
@@ -8809,7 +8833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693527950427562280, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
       propertyPath: moveSpeed
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5693527950427562280, guid: 51331ff785e27fb45be0bdd2684e38d0, type: 3}
       propertyPath: roomBoundary
