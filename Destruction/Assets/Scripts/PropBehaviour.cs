@@ -42,8 +42,10 @@ public class PropBehavior : MonoBehaviour
 
     void Update()
     {
-        if (isFake || GameManager.instance == null || player == null || !LightController.lightsOff || !playerInRoom)
+        if (isFake || GameManager.instance == null || player == null || !playerInRoom)
             return;
+
+        if (IsLitByFlashlight()) return; // Don't move if lit
 
         float distance = Vector2.Distance(transform.position, player.position);
 
@@ -58,6 +60,13 @@ public class PropBehavior : MonoBehaviour
             }
         }
     }
+
+    bool IsLitByFlashlight()
+    {
+        var sr = GetComponentInChildren<SpriteRenderer>();
+        return sr != null && sr.isVisible;
+    }
+
     public void SetPlayerInside(bool inside)
     {
         playerInRoom = inside;
