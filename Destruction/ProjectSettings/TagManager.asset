@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Prop
   - RoomBoundary
+  - Flashlight
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - Background
   - RoomBoundary
   - Bullet
-  - 
-  - 
-  - 
+  - Flashlight
+  - Prop
+  - Player
   - 
   - 
   - 

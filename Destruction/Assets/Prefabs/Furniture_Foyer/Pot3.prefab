@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1563861910519315989}
   - component: {fileID: -5428052831646119440}
   - component: {fileID: -2150307849881480805}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pot3
   m_TagString: Prop
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205988848553084394}
   - component: {fileID: 8065585592488914438}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

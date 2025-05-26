@@ -10,13 +10,14 @@ public class LevelIntroController : MonoBehaviour
     void Start()
     {
         instructionText.gameObject.SetActive(true);
-        globalLight.intensity = 0.3f;
+        globalLight.intensity = 0.01f; // Keep dim
         Invoke(nameof(HideInstructions), displayTime);
     }
 
     void HideInstructions()
     {
         instructionText.gameObject.SetActive(false);
-        globalLight.intensity = 1.0f;
+        // Do not reset the light to 1.0
+        // If needed: globalLight.intensity = 0.3f;
     }
 }

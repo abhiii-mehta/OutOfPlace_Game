@@ -6,15 +6,16 @@ public class PropBehavior : MonoBehaviour
     public float moveSpeed = 1f;
     public Collider2D roomBoundary;
     public float aggroRange = 5f;
-
     public Sprite destroyedSprite;
+
     private SpriteRenderer sr;
     private Transform player;
     private bool playerInRoom = false;
+    private bool isLit = false;
+    private bool initialized = false;
+
     void Start()
     {
-        Debug.Log("Prop Tag: " + tag);
-        Debug.Log("Prop Layer: " + gameObject.layer);
         sr = GetComponentInChildren<SpriteRenderer>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -26,26 +27,23 @@ public class PropBehavior : MonoBehaviour
             Debug.LogWarning($"{name}: Player not found in scene.");
         }
 
-        if (!isFake)
+        if (!isFake && GameManager.instance != null)
         {
-            if (GameManager.instance != null)
-            {
-                Debug.Log("Registering real prop: " + name);
-                GameManager.instance.RegisterRealProp();
-            }
-            else
-            {
-                Debug.LogWarning("GameManager not found when trying to register: " + name);
-            }
+            GameManager.instance.RegisterRealProp();
         }
+
+        Invoke(nameof(EnableMovement), 0.1f); // small delay
+    }
+
+    void EnableMovement()
+    {
+        initialized = true;
     }
 
     void Update()
     {
-        if (isFake || GameManager.instance == null || player == null || !playerInRoom)
+        if (!initialized || isFake || GameManager.instance == null || player == null || !playerInRoom || isLit)
             return;
-
-        if (IsLitByFlashlight()) return; // Don't move if lit
 
         float distance = Vector2.Distance(transform.position, player.position);
 
@@ -61,16 +59,11 @@ public class PropBehavior : MonoBehaviour
         }
     }
 
-    bool IsLitByFlashlight()
-    {
-        var sr = GetComponentInChildren<SpriteRenderer>();
-        return sr != null && sr.isVisible;
-    }
-
     public void SetPlayerInside(bool inside)
     {
         playerInRoom = inside;
     }
+
     public void DestroyWithSpriteSwap()
     {
         if (destroyedSprite != null)
@@ -85,10 +78,26 @@ public class PropBehavior : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Flashlight"))
+        {
+            isLit = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Flashlight"))
+        {
+            isLit = false;
+        }
+    }
+
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = isFake ? Color.yellow : Color.red;
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
-
 }

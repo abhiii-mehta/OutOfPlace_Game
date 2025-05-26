@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4369286011776056815}
   - component: {fileID: 1166902890000660143}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5068832388768001585}
   - component: {fileID: 3209072277534099412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7611026489871566670}
   - component: {fileID: 8370870211802266476}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 470332588991209395}
   - component: {fileID: 1977875362002622828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 2636016265393765856}
   - component: {fileID: -8637069841538504764}
   - component: {fileID: 5693527950427562280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Table3
   m_TagString: Prop
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418085356806434351}
   - component: {fileID: 1737155452490580510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6001896079404471103}
   - component: {fileID: 2396324320966988191}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

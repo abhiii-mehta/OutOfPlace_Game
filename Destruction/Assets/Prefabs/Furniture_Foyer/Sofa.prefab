@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3198436126059729679}
   - component: {fileID: 8334057011335176984}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4127918419621456093}
   - component: {fileID: 7178733742033991418}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 8227421737864801984}
   - component: {fileID: -1015373419742265049}
   - component: {fileID: 488548740170602325}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sofa
   m_TagString: Prop
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -311,7 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6689032414156662622}
   - component: {fileID: 5302627615146223415}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7024631636318040626}
   - component: {fileID: -9018985836851847297}
   - component: {fileID: 8927980576479677866}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BookShelf1
   m_TagString: Prop
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980818451741666326}
   - component: {fileID: 8451946528602831628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
