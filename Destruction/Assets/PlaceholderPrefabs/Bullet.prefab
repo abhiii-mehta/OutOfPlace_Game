@@ -167,6 +167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 2
+  shootSound: {fileID: 8300000, guid: 81ee8b457c194264a8cd89a5ca59d92c, type: 3}
+  shellDropSound: {fileID: 8300000, guid: 2ecbddcc5bcf0c446813a8596c308c85, type: 3}
+  audioVolume: 0.06
 --- !u!1 &7866685147454453132
 GameObject:
   m_ObjectHideFlags: 0
