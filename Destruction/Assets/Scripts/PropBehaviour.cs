@@ -4,59 +4,51 @@ public class PropBehavior : MonoBehaviour
 {
     public bool isFake = false;
     public float moveSpeed = 1f;
-    public Collider2D roomBoundary;
     public float aggroRange = 5f;
+    public Collider2D roomBoundary;
     public Sprite destroyedSprite;
 
     private SpriteRenderer sr;
     private Transform player;
     private bool playerInRoom = false;
     private bool isLit = false;
-    private bool initialized = false;
 
     void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+
+        if (isFake)
         {
-            player = playerObj.transform;
+            GetComponent<Collider2D>().isTrigger = true;
         }
         else
         {
-            Debug.LogWarning($"{name}: Player not found in scene.");
+            GetComponent<Collider2D>().isTrigger = false;
+            GameManager.instance?.RegisterRealProp();
         }
-
-        if (!isFake && GameManager.instance != null)
-        {
-            GameManager.instance.RegisterRealProp();
-        }
-
-        Invoke(nameof(EnableMovement), 0.1f); // small delay
-    }
-
-    void EnableMovement()
-    {
-        initialized = true;
     }
 
     void Update()
     {
-        if (!initialized || isFake || GameManager.instance == null || player == null || !playerInRoom || isLit)
+        if (isFake || GameManager.instance == null || player == null || !playerInRoom || isLit)
             return;
 
         float distance = Vector2.Distance(transform.position, player.position);
+        if (distance > aggroRange) return;
 
-        if (distance <= aggroRange)
+        Vector2 direction = (player.position - transform.position).normalized;
+        transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+
+        if (distance < 2f)
         {
-            Vector2 direction = (player.position - transform.position).normalized;
-            transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
-
-            if (distance < 2f)
-            {
-                CameraShake.instance?.Shake(0.15f, 0.05f);
-            }
+            CameraShake.instance?.Shake(0.15f, 0.05f);
         }
+    }
+
+    public void SetLit(bool value)
+    {
+        isLit = value;
     }
 
     public void SetPlayerInside(bool inside)
@@ -78,9 +70,14 @@ public class PropBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnDrawGizmosSelected()
     {
-        if (other.CompareTag("Flashlight"))
+        Gizmos.color = isFake ? Color.yellow : Color.red;
+        Gizmos.DrawWireSphere(transform.position, aggroRange);
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Flashlight"))
         {
             isLit = true;
         }
@@ -88,16 +85,10 @@ public class PropBehavior : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Flashlight"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Flashlight"))
         {
             isLit = false;
         }
     }
 
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = isFake ? Color.yellow : Color.red;
-        Gizmos.DrawWireSphere(transform.position, aggroRange);
-    }
 }
