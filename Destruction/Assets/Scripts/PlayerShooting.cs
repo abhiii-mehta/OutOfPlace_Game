@@ -42,8 +42,13 @@ public class PlayerShooting : MonoBehaviour
         activeBullet = bullet;
         currentBullets--;
         shootTimer = 0f;
-
         UpdateBulletUI();
+
+        if (currentBullets <= 0)
+        {
+            GameManager.instance?.OnOutOfBullets();
+        }
+
     }
 
     public void ClearBullet()

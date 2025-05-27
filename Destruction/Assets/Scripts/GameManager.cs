@@ -78,6 +78,14 @@ public class GameManager : MonoBehaviour
             ShowLevelMessage("All real props destroyed.\nFind the stairs.");
         }
     }
+    public void OnOutOfBullets()
+    {
+        if (gameOver) return;
+
+        Debug.Log("Player ran out of bullets — YOU LOSE!");
+        gameOver = true;
+        MenuManager.instance.ShowLosePanel();
+    }
 
     public void ShowLevelMessage(string msg)
     {
