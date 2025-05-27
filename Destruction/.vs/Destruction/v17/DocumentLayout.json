@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\propbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\lightflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lightflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\levelintrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelintrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|d:\\suse25\\gameaweek\\abhi_ain_destruction\\destruction\\assets\\scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\assets\\scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B380D6F9-510E-4CD0-8D9D-9F6054BF5C1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,32 +54,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LightFlash.cs",
-              "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LightFlash.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LightFlash.cs",
-              "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LightFlash.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LightFlash.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "LevelIntroController.cs",
+              "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LevelIntroController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelIntroController.cs",
+              "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\LevelIntroController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelIntroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:48:32.808Z",
+              "WhenOpened": "2025-05-27T03:29:10.316Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FlashlightDetection.cs",
-              "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\FlashlightDetection.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FlashlightDetection.cs",
-              "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\FlashlightDetection.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FlashlightDetection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:26:52.699Z"
             },
             {
               "$type": "Document",
@@ -137,10 +125,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PropBehaviour.cs",
               "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\PropBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\PropBehaviour.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAswJMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAkwLgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T14:35:57.017Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FlashlightDetection.cs",
+              "DocumentMoniker": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\FlashlightDetection.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FlashlightDetection.cs",
+              "ToolTip": "D:\\SuSe25\\GameAWeek\\abhi_ain_destruction\\Destruction\\Assets\\Scripts\\FlashlightDetection.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FlashlightDetection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:26:52.699Z"
             },
             {
               "$type": "Document",
@@ -152,8 +152,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FlashLight.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:54:01.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T18:54:01.109Z"
             },
             {
               "$type": "Document",

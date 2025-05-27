@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PropBehavior : MonoBehaviour
 {
@@ -8,14 +9,23 @@ public class PropBehavior : MonoBehaviour
     public Collider2D roomBoundary;
     public Sprite destroyedSprite;
 
+    public GameObject eyes;
+    public Light2D leftEyeLight;
+    public Light2D rightEyeLight;
+
     private SpriteRenderer sr;
     private Transform player;
+    private Transform flashlightTransform;
     private bool playerInRoom = false;
     private bool isLit = false;
-    private Transform flashlightTransform;
-    private bool hasDodged = false;
-    private float dodgeCooldown = 2f;
-    private float dodgeTimer = 0f;
+
+    private float eyeTimer = 0f;
+    private float eyeCooldown = 0f;
+    private bool eyeVisible = false;
+
+    private bool dashing = false;
+    private float dashCooldown = 0f;
+    private Vector2 dashDirection;
 
     void Start()
     {
@@ -25,6 +35,14 @@ public class PropBehavior : MonoBehaviour
         if (player != null)
         {
             flashlightTransform = player.Find("Flashlight");
+        }
+
+        eyes = transform.Find("eye")?.gameObject;
+        if (eyes != null)
+        {
+            eyes.SetActive(false);
+            if (leftEyeLight != null) leftEyeLight.enabled = false;
+            if (rightEyeLight != null) rightEyeLight.enabled = false;
         }
 
         if (isFake)
@@ -40,65 +58,86 @@ public class PropBehavior : MonoBehaviour
 
     void Update()
     {
-        if (isFake || GameManager.instance == null || player == null || !playerInRoom || isLit)
+        if (isFake || GameManager.instance == null || player == null || !playerInRoom)
             return;
 
         float distance = Vector2.Distance(transform.position, player.position);
         if (distance > aggroRange) return;
 
-        Vector2 toProp = (transform.position - player.position).normalized;
-        Vector2 direction;
+        HandleEyes();
+        HandleDash();
+        HandleMovement(distance);
+    }
 
-        // Smart flanking if directly in flashlight cone
-        if (flashlightTransform != null)
+    void HandleEyes()
+    {
+        if (eyes == null) return;
+
+        if (!isLit && eyeCooldown <= 0f && !eyeVisible && Random.value < 0.005f)
         {
-            Vector2 flashlightDir = flashlightTransform.right;
-            float dot = Vector2.Dot(toProp, flashlightDir);
+            SetEyes(true);
+            eyeTimer = 0.5f;
+        }
 
-            if (dot > 0.7f)
+        if (eyeVisible)
+        {
+            eyeTimer -= Time.deltaTime;
+            if (eyeTimer <= 0f || isLit)
             {
-                Vector2 flankDir = Vector2.Perpendicular(flashlightDir) * (Random.value > 0.5f ? 1 : -1);
-                direction = (flankDir + (Vector2)(player.position - transform.position)).normalized;
-            }
-            else
-            {
-                direction = (player.position - transform.position).normalized;
+                SetEyes(false);
+                eyeCooldown = 2f;
             }
         }
         else
         {
-            direction = (player.position - transform.position).normalized;
+            eyeCooldown -= Time.deltaTime;
+        }
+    }
+
+    void SetEyes(bool state)
+    {
+        eyes.SetActive(state);
+        if (leftEyeLight != null) leftEyeLight.enabled = state;
+        if (rightEyeLight != null) rightEyeLight.enabled = state;
+        eyeVisible = state;
+    }
+
+    void HandleDash()
+    {
+        if (isLit && !dashing && dashCooldown <= 0f)
+        {
+            dashDirection = (Vector2)(transform.position - flashlightTransform.position).normalized;
+            dashing = true;
+            dashCooldown = 2f;
         }
 
-        transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
-
-        if (distance < 2f)
+        if (dashing)
         {
-            CameraShake.instance?.Shake(0.15f, 0.05f);
+            transform.position += (Vector3)(dashDirection * moveSpeed * 3f * Time.deltaTime);
+            dashing = false;
         }
-
-        if (hasDodged)
+        else
         {
-            dodgeTimer += Time.deltaTime;
-            if (dodgeTimer >= dodgeCooldown)
+            dashCooldown -= Time.deltaTime;
+        }
+    }
+
+    void HandleMovement(float distance)
+    {
+        if (!isLit && !dashing)
+        {
+            Vector2 direction = (player.position - transform.position).normalized;
+            transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+
+            if (distance < 2f)
             {
-                hasDodged = false;
-                dodgeTimer = 0f;
+                CameraShake.instance?.Shake(0.15f, 0.05f);
             }
         }
     }
 
     public void SetLit(bool value)
     {
-        if (!isFake && value && !hasDodged && Random.value < 0.5f)
-        {
-            // Perform dodge
-            Vector2 dodgeDir = Vector2.Perpendicular((transform.position - player.position).normalized) * (Random.value > 0.5f ? 1 : -1);
-            transform.position += (Vector3)(dodgeDir * 0.5f);
-            hasDodged = true;
-            Debug.Log(name + " dodged the light!");
-        }
-
         isLit = value;
     }
 
@@ -131,8 +170,7 @@ public class PropBehavior : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Flashlight"))
         {
-            SetLit(true);
-            Debug.Log($"{name} entered flashlight");
+            isLit = true;
         }
     }
 
@@ -140,8 +178,7 @@ public class PropBehavior : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Flashlight"))
         {
-            SetLit(false);
-            Debug.Log($"{name} exited flashlight");
+            isLit = false;
         }
     }
 }

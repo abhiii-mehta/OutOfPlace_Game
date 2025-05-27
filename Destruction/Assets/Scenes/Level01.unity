@@ -11943,7 +11943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7777249348732270643, guid: 4f92b19d72d8d354c82cf98376fe97b7, type: 3}
       propertyPath: m_Intensity
-      value: 0.01
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 8032470897879444401, guid: 4f92b19d72d8d354c82cf98376fe97b7, type: 3}
       propertyPath: nextSceneName
