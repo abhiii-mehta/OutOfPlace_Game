@@ -507,3 +507,4 @@ MonoBehaviour:
   eyes: {fileID: 2170974177232379307}
   leftEyeLight: {fileID: 7234942855729796132}
   rightEyeLight: {fileID: 3838381562064021700}
+  moveSFX: {fileID: 8300000, guid: 630cc4dd1041b8b4c8378e501e863326, type: 3}

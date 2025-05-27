@@ -27,6 +27,9 @@ public class PropBehavior : MonoBehaviour
     private float dashCooldown = 0f;
     private Vector2 dashDirection;
 
+    public AudioClip moveSFX;
+    private AudioSource moveAudio;
+
     void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
@@ -54,6 +57,12 @@ public class PropBehavior : MonoBehaviour
             GetComponent<Collider2D>().isTrigger = false;
             GameManager.instance?.RegisterRealProp();
         }
+        moveAudio = gameObject.AddComponent<AudioSource>();
+        moveAudio.clip = moveSFX;
+        moveAudio.loop = true;
+        moveAudio.playOnAwake = false;
+        moveAudio.volume = 0.4f; // you can adjust this
+
     }
 
     void Update()
@@ -67,6 +76,13 @@ public class PropBehavior : MonoBehaviour
         HandleEyes();
         HandleDash();
         HandleMovement(distance);
+        // Stop movement sound if not moving
+        if (isLit || !playerInRoom || Vector2.Distance(transform.position, player.position) > aggroRange)
+        {
+            if (moveAudio.isPlaying)
+                moveAudio.Stop();
+        }
+
     }
 
     void HandleEyes()
@@ -133,6 +149,10 @@ public class PropBehavior : MonoBehaviour
             {
                 CameraShake.instance?.Shake(0.15f, 0.05f);
             }
+        }
+        if (!moveAudio.isPlaying)
+        {
+            moveAudio.Play();
         }
     }
 

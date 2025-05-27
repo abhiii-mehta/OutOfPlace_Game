@@ -216,6 +216,7 @@ MonoBehaviour:
   eyes: {fileID: 6991025444156966058}
   leftEyeLight: {fileID: 1375485310628357415}
   rightEyeLight: {fileID: 4388163566275443745}
+  moveSFX: {fileID: 8300000, guid: 630cc4dd1041b8b4c8378e501e863326, type: 3}
 --- !u!1 &5929287386811943183
 GameObject:
   m_ObjectHideFlags: 0
