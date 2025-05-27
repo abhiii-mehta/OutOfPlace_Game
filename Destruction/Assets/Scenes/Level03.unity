@@ -5987,6 +5987,10 @@ PrefabInstance:
       propertyPath: bulletCounterText
       value: 
       objectReference: {fileID: 1137064770}
+    - target: {fileID: 7419153492506141982, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14355,6 +14359,10 @@ PrefabInstance:
     - target: {fileID: 6307961328627810956, guid: 4f92b19d72d8d354c82cf98376fe97b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777249348732270643, guid: 4f92b19d72d8d354c82cf98376fe97b7, type: 3}
+      propertyPath: m_Intensity
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
