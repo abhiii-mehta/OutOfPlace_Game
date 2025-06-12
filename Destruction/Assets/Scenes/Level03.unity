@@ -5975,6 +5975,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4507594425092171365, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 71.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507594425092171365, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6767727995262713134, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -5994,8 +6002,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7419153492506141982, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 488462080}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+--- !u!1 &488462079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7419153492506141982, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+  m_PrefabInstance: {fileID: 488462078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &488462080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488462079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acf7f1cf433c174db33a161fb67b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &499206903
 GameObject:
   m_ObjectHideFlags: 0

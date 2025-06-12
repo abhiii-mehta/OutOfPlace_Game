@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EpilepsyWarning.unity
     guid: 6da3af8f3fd180741b6ef699ec81d1a1
   - enabled: 1
