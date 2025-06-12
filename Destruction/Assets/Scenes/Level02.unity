@@ -154,6 +154,11 @@ Transform:
   - {fileID: 1626131253}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &212440406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3956695283258857088, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+  m_PrefabInstance: {fileID: 822047764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &226524759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,7 +457,7 @@ PrefabInstance:
     - target: {fileID: 4325225148001436160, guid: 4f92b19d72d8d354c82cf98376fe97b7, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 158391863412138398}
+      objectReference: {fileID: 212440406}
     - target: {fileID: 4387201720189120049, guid: 4f92b19d72d8d354c82cf98376fe97b7, type: 3}
       propertyPath: m_Name
       value: GameMechanic
@@ -4429,6 +4434,10 @@ PrefabInstance:
       propertyPath: bulletCounterText
       value: 
       objectReference: {fileID: 1906793932}
+    - target: {fileID: 7419153492506141982, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13094,11 +13103,6 @@ Transform:
   - {fileID: 537898834}
   m_Father: {fileID: 1910800526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &158391863412138398 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3956695283258857088, guid: 6fa5619930be12442ba9a866c1a48327, type: 3}
-  m_PrefabInstance: {fileID: 3613675542332108518}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3613675542332108518
 PrefabInstance:
   m_ObjectHideFlags: 0
